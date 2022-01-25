@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(3)->create();
         Post::factory(20)->create();
+        Category::factory(3)->create();
 
         // User::create([
         //     'name' => "Admin",
@@ -31,15 +32,15 @@ class DatabaseSeeder extends Seeder
         //     "password" => bcrypt("123")
         // ]);
         
-        Category::create([
-            "name" => "Web Programming",
-            "slug" => "web-programming"
-        ]);
+        // Category::create([
+        //     "name" => "Web Programming",
+        //     "slug" => "web-programming"
+        // ]);
 
-        Category::create([
-            "name" => "Personal",
-            "slug" => "personal"
-        ]);
+        // Category::create([
+        //     "name" => "Personal",
+        //     "slug" => "personal"
+        // ]);
 
         // Post::create([
         //     "title" => "Judul Pertama",
